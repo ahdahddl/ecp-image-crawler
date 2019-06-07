@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
-      <module name="ecp-image-crawler.main" target="1.8" />
-      <module name="ecp-image-crawler.test" target="1.8" />
-    </bytecodeTargetLevel>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
   </component>
 </project>

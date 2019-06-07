@@ -1,0 +1,30 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+# 개발/운영 환경에서 API 요청이 잘되는지 확인이 필요
+## 베타/운영 서버의 A API 값이 안나와요. 확인좀 해주세요.
+## 베타 서버의 B API 사용해보려면 어떻게 해야 하나요?
+## 전에 사용했던 API URL과 인증키가 어떻게 되나요?
+
+POST http://localhost:8080/group
+Content-Type: application/json
+
+{
+  "groupName": "그룹명",
+  "members": [
+    "회원1",
+    "회원2",
+    "회원3"
+  ],
+  "date": {
+    "year": 2018,
+    "month": 1,
+    "day": 24
+  }
+}
+
+###

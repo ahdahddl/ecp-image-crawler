@@ -11,10 +11,26 @@ repositories {
     mavenCentral()
 }
 
+// main java 소스셋의 디렉토리 추가
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
     // https://mvn.com/artifact/org.springframework/spring-webmvc
     compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.18.RELEASE'
+
+    // https://mvn.com/artifact/org.projectlombok/lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+
 
 }
